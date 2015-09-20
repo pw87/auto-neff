@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="cs">
+	<head>
+		<meta charset="utf-8">
+		<title>AUTONEFF.CH</title>
+		
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Pauli Winkelmann">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+		<link rel="stylesheet" href="css/main.css" media="screen,projection">
+		<link rel="stylesheet" href="css/print.css" media="print">		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="wrap">
+				<img src="img/Neues_Logo_Rot_Small.png" alt="auto neff kappelen" />
+				<hr>
+				<nav>
+					<div id="nav">
+						<strong>Navigation</strong>
+						<ul>
+							<li class="active">
+								<a href="./index.html" title="">Home</a>
+							</li>
+							<li>
+								<a href="./occasionen.html" title="">Occasionen</a>
+							</li>
+							<li>
+								<a href="./suchauftrag.html" title="">Such-Auftrag</a>
+							</li>
+							<li>
+								<a href="./verkauf.html" title="">Verkauf-Auftrag</a>
+							</li>
+							<li>
+								<a href="./ankauf.html" title="">Ankauf</a>
+							</li>
+							<li>
+								<a href="./kontakt.html" title="">Kontakt</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		
+		<div id="intro">
+			<div class="inner">
+				<div class="wrap clearFix">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div id="content">			
+				
+			<div class="wrap clearFix">			
+				<h2>Verkauf-Auftrag</h2>
+				<div class="clearFix">					
+					Auf Wunsch verkaufen wir Ihr Fahrzeug auch in Ihrem Auftrag. Ihre Vorteile auf einen Blick:
+
+					<ul>
+						<li>Sie haben keine Verkaufsaufwände</li>
+						<li>Wir erzielen für Sie einen höheren Verkaufspreis</li>
+						<li>Ihr Auto wird gut sichtbar an einer stark befahrenen Strasse ausgestellt</li>
+					</ul> 					
+					
+					Für diesen Service verrechnen wir Ihnen eine Provision von 2.9% des Verkaufspreises sowie die Inseratkosten von 89 Fr. pro Monat. 
+					<br /><br />
+					
+					<form action="./#" id="mForm" style="padding-left: 20px; padding-bottom: 20px;" method="POST">
+						<table border="0">
+							<tbody>
+								<tr>
+									<th height="40">Angaben zum Fahrzeug</th>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Marke (*)</td>
+									<td>
+										<input type="text" id="marke" name="data[Marke]" size="20" value="" required>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Typ (*)</td>
+									<td>
+										<input type="text" id="type" name="data[Typ]" size="20" value="" required>
+									</td>
+								</tr>			
+								<tr>
+									<td>Kilometerstand (*)</td>
+									<td>
+										<input type="text" id="km" name="data[Kilometerstand]" size="20" value="" required>
+									</td>								
+								</tr>
+								<tr>
+									<td>Hubraum (*)</td>
+									<td>
+										<input type="text" id="hubraum" name="data[Hubraum]" size="20" value="" required>
+									</td>								
+								</tr>
+								<tr>
+									<td>PS (*)</td>
+									<td>
+										<input type="text" id="ps" name="data[PS]" size="20" value="" required>
+									</td>								
+								</tr>
+								<tr>
+									<td>Preis (*)</td>
+									<td>
+										<input type="text" id="preis" name="data[Preis]" size="20" value="" required>
+									</td>								
+								</tr>
+								<tr>
+									<td>Farbe</td>
+									<td>
+										<input type="text" id="farbe" name="data[Farbe]" size="20" value="">
+									</td>								
+								</tr>
+								<tr>
+									<td>Getriebeart</td>
+									<td>
+										<select name="data[Getriebeart]" id="gtr">
+											<option value="Alle" selected="selected">Alle...</option>
+											<option value="Automat">Automat</option>
+											<option value="Schaltgetriebe">Schaltgetriebe</option>
+										</select>
+									</td>								
+								</tr>
+								<tr>
+									<td>Antrieb</td>
+									<td>
+										<select name="data[Antrieb]" id="antrieb">
+											<option value="Alle" selected="selected">Alle...</option>
+											<option value="Allrad">Allrad</option>
+											<option value="Hinterradantrieb">Hinterradantrieb</option>
+											<option value="Vorderradantrieb">Vorderradantrieb</option>
+										</select>
+									</td>								
+								</tr>
+								<tr>
+									<td>Treibstoff</td>
+									<td>
+										<select name="data[Treibstoff]" id="treibstoff">
+											<option value="Alle" selected="selected">Alle...</option>
+											<option value="Benzin">Benzin</option>
+											<option value="Bioethanol">Bioethanol</option>
+											<option value="Diesel">Diesel</option>
+											<option value="Elektro">Elektro</option>
+											<option value="Gas (LNG, LPG, GPL, CNG)">Gas (LNG, LPG, GPL, CNG)</option>
+											<option value="Hybrid">Hybrid</option>
+										</select>
+									</td>								
+								</tr>
+								
+								<tr>
+									<th height="40">Kontakt-Angaben</th>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Name (*)</td>
+									<td>
+										<input type="text" id="name" name="data[Name]" size="20" value="" required>
+									</td>
+								</tr>
+								<tr>
+									<td>Telefon (*)</td>
+									<td>
+										<input type="text" id="telefon" name="data[Telefon]" size="20" value="" required>
+									</td>								
+								</tr>
+								<tr>
+									<td>Email (*)</td>
+									<td>
+										<input type="text" id="mail" name="data[Email]" size="20" value="" required>
+									</td>								
+								</tr>
+								<tr>
+									<td></td>
+									
+									<td></td>
+								</tr>							
+							</tbody>
+						</table> <br />
+						
+						<input type="hidden" name="subject" value="AutoNeff Verkauf-Auftrag">
+																		
+						<button type="submit" class="button iconRight">Absenden<i class="more"></i></button>
+						
+						<div id="success">
+							Vielen Dank! Ihr Verkaufauftrag wird bearbeitet.
+						</div>
+						<div id="failed">
+							Es ist ein Fehler aufgetreten! Bitte versuchen Sie es später noch einmal.
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			// variable to hold request
+			var request;
+			// bind to the submit event of our form
+			$("#mForm").submit(function(event){
+			    // abort any pending request
+			    if (request) {
+			        request.abort();
+			    }
+			    
+			    $('#success').hide();
+			    $('#failed').hide();
+			    
+			    // setup some local variables
+			    var $form = $(this);
+			    // let's select and cache all the fields
+			    var $inputs = $form.find("input, select, button, textarea");
+			    // serialize the data in the form
+			    var serializedData = $form.serialize();
+			
+			    // let's disable the inputs for the duration of the ajax request
+			    $inputs.prop("disabled", true);
+			
+			    // fire off the request to /form.php
+			    var request = $.ajax({
+			        url: "./php/sendMail.php",
+			        type: "post",
+			        data: serializedData
+			    });
+			
+			    // callback handler that will be called on success
+			    request.done(function (response, textStatus, jqXHR){
+			    	
+			    	$('#success').show();
+			    	
+			        // log a message to the console
+			        console.log("Hooray, it worked!");
+			    });
+			
+			    // callback handler that will be called on failure
+			    request.fail(function (jqXHR, textStatus, errorThrown){
+			    	
+			    	$('#failed').show();
+			    	
+			        // log the error to the console
+			        console.error("The following error occured: "+textStatus, errorThrown);
+			    });
+			
+			    // callback handler that will be called regardless
+			    // if the request failed or succeeded
+			    request.always(function () {
+			        // reenable the inputs
+			        $inputs.prop("disabled", false);
+			    });
+			
+			    // prevent default posting of form
+			    event.preventDefault();
+			});
+		</script>
+		<!-- / #content -->
+		
+		<footer>
+			<div class="wrap clearFix">
+				<p class="floatLeft">
+					Copyright &copy; 2012 by Auto Neff
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
