@@ -54,7 +54,7 @@ header #nav > ul > li > a:hover {color: #C7502B;text-decoration: none;}
 
 header img {padding-top: 18px;}
 
-#intro { /*background: #ac321b url('../img/intro-repeat.png') repeat-x;*/border-top: 1px solid #cdcdcd;/*border-bottom: 1px solid #fff;*/position: relative;z-index: 90; margin: 0 auto; width: 940px;}
+#intro { /*background: #ac321b url('../img/intro-repeat.png') repeat-x;*/border-top: 1px solid #cdcdcd;/*border-bottom: 1px solid #fff;*/position: relative;z-index: 90; margin: 0 auto; max-width: 940px;}
 #intro .inner {padding: 10px 0; /*background: url('../img/intro-middle.png') no-repeat 50% 0;*/}
 #intro p {color: #ffffff;margin-bottom: 20px;padding-right: 20%;}
 #intro .button {
@@ -88,7 +88,7 @@ header img {padding-top: 18px;}
 /*******************************************************************************************************************
 *  CONTENT                                                                                                         
 *******************************************************************************************************************/
-#content {padding: 0px 0 50px;text-shadow: 1px 1px 1px #fff; margin-top: 20px; }
+#content {padding: 0 10px 50px;text-shadow: 1px 1px 1px #fff; margin-top: 20px; }
 .cols {margin-bottom: 30px;}
 .cols li {max-width: 32%;float: left;background: url('../img/cite.png') no-repeat;}
 .cols li p {padding-left: 45px;}
@@ -121,7 +121,7 @@ form .text:hover {border-color: #aeaeae;}
 /*******************************************************************************************************************
 *  FOOTER                                                                                                          
 *******************************************************************************************************************/
-footer {padding: 15px 0;font-size: 0.85em;color: #777777; margin: 0 auto; border-top: 1px solid #cdcdcd; width: 940px;}
+footer {padding: 15px 0;font-size: 0.85em;color: #777777; margin: 0 auto; border-top: 1px solid #cdcdcd; max-width: 940px;}
 footer p {line-height: 1.9em;}
 footer a, footer a:link, footer a:focus {color: #999999;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
 footer a:hover {color: #fff;}
@@ -256,4 +256,8 @@ input, select { border: 1px solid #C8C8C8; padding: 1px 0 1px 5px; }
 	padding-top: 10px;
 }
 
+.logo {
+	width: 100%;
+	max-width: 640px;
+}
 
