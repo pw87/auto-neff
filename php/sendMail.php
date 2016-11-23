@@ -6,28 +6,36 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
 
- 
+ require 'PHPMailer/PHPMailerAutoload.php';
+
+
  $subject = $_POST['subject'];
-
- $message = "<h3>".$subject."</h3> <br><br> <table style=\"font-size:12px;\">";
-
+ $message = "<h3>".$subject."</h3> <table style=\"font-size:14px;\">";
 
  foreach ($_POST['data'] as $key => $value) 
  {
     $message = $message."<tr><td><strong>".$key.
 			":</strong></td><td width=\"20px\"></td><td>".$value."</td></tr>";
  }
- 
- $message = $message."</table>";	
+ $message = $message."</table>";
 
- $to = "info@autoneff.ch"; 
-  
- $header_basic = "MIME-Version: 1.0" . "\r\n";
- $header_basic .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
- $header_1 = $header_basic . "From: ". "AutoNeff.ch" . "\r\n";
+ $to = "info@autoneff.ch";
 
-  
- $send = mail($to, $subject, $message, $header_1);
- 
+ $mail = new PHPMailer;
+
+ $mail->From = 'phpMailer@autoneff.ch';
+ $mail->FromName = 'AutoNeff.ch';
+ $mail->addAddress($to);
+ $mail->addReplyTo("noReply@autoneff.ch", "Reply");
+
+ $mail->isHTML(true);
+ $mail->Subject = $subject;
+ $mail->Body = $message;
+
+ if (!$mail->send()) {
+     echo "Mailer Error: " . $mail->ErrorInfo;
+ } else {
+     echo "Message has been sent successfully";
+ }
 
 ?>
