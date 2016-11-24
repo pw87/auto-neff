@@ -51,8 +51,9 @@ header #nav > ul > li:first-child {background: none;}
 header #nav > ul > li > a {float: left;color: #424242;display: block;height: 84px;text-transform: uppercase;text-decoration: none;font-weight: bold;padding: 0 20px;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
 header #nav > ul > li.active > a {cursor: pointer;text-decoration: none;} 
 header #nav > ul > li > a:hover {color: #C7502B;text-decoration: none;}
-
 header img {padding-top: 18px;}
+
+div#ric-rating {float:right; background-image: url('../img/ricardo_100.png');width: 180px;height: 70px;background-size: cover;}
 
 #intro { /*background: #ac321b url('../img/intro-repeat.png') repeat-x;*/border-top: 1px solid #cdcdcd;/*border-bottom: 1px solid #fff;*/position: relative;z-index: 90; margin: 0 auto; max-width: 940px;}
 #intro .inner {padding: 10px 0; /*background: url('../img/intro-middle.png') no-repeat 50% 0;*/}
@@ -221,9 +222,10 @@ input, select { border: 1px solid #C8C8C8; padding: 1px 0 1px 5px; }
 
 @media (max-width: 580px) { 
 	header {height: 50px;line-height: 50px;}
-	#intro .inner {padding: 30px 0;}
+	#intro .inner {padding: 0 0;}
 	#intro p {padding-right: 0 !important;}
 	h1 {font-size: 2.6em;}
+	p {font-size: 1.15em;}
     header a#logo {left: 20px;}
     header #nav {right: 20px;}
     header #nav > strong {display: block;float: right;cursor: pointer;}
@@ -238,7 +240,6 @@ input, select { border: 1px solid #C8C8C8; padding: 1px 0 1px 5px; }
     footer p.socialIcons {text-align: center;}
     footer p.socialIcons a {margin: 0 5px;}
     .buttonCentered {position: relative;top: -15px;}
-
 }
 
 /* iPhone4 */
