@@ -53,7 +53,7 @@ header #nav > ul > li.active > a {cursor: pointer;text-decoration: none;}
 header #nav > ul > li > a:hover {color: #C7502B;text-decoration: none;}
 header img {padding-top: 18px;}
 
-div#ric-rating {float:right; background-image: url('../img/ricardo_100.png');width: 180px;height: 70px;background-size: cover;}
+div#ric-rating {float:right; background-image: url('../img/ricardo_100.png');width: 220px;height: 90px;background-size: cover;}
 
 #intro { /*background: #ac321b url('../img/intro-repeat.png') repeat-x;*/border-top: 1px solid #cdcdcd;/*border-bottom: 1px solid #fff;*/position: relative;z-index: 90; margin: 0 auto; max-width: 940px;}
 #intro .inner {padding: 10px 0; /*background: url('../img/intro-middle.png') no-repeat 50% 0;*/}
