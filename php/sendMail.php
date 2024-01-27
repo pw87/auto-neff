@@ -20,7 +20,7 @@
  }
  $message = $message."</table>";
 
- $to = "pauliwinke@gmail.com";
+ $to = "info@autoneff.ch";
 
  $mail = new PHPMailer;
 
