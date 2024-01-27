@@ -6,7 +6,7 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
 
- require 'PHPMailer/PHPMailerAutoload.php';
+ require 'PHPMailer-6.9.1/src/PHPMailer.php';
 
 
  $subject = $_POST['subject'];
@@ -19,7 +19,7 @@
  }
  $message = $message."</table>";
 
- $to = "info@autoneff.ch";
+ $to = "pauliwinke@gmail.com";
 
  $mail = new PHPMailer;
 
