@@ -5,7 +5,8 @@
  * To change the template for this generated file go to
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
-
+ namespace MyProject;
+ use PHPMailer\PHPMailer\PHPMailer;
  require 'PHPMailer-6.9.1/src/PHPMailer.php';
 
 
